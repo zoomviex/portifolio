@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   appearance: none;
+   border: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+
+html{
+   font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  font-family: poppins, sans-serif;
+  height: 100vh;
+  font-size: 0.88rem;
+  background: var(--color-background);
+  color: var(--color-dark);
+  user-select: none;
+  overflow-x: hidden;
+}
+
+a {
+   text-decoration: none;
+}
+
+#header {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+header #logo-img img{
+   width: 6rem;
+}
+
+header #logo-title p{
+   padding-top: 1.6rem;
+   padding-left: 0.8rem;
+   font-size: 2.4rem;
+}
+
+header #menu {
+   display: flex;
+   font-size: 1.2rem;
+}
+
+
+main #greeting-card {
+   background-color: var(--color-lg-green);
+   width: 100%;
+   margin-top: 4rem;
+}
+
+main #greeting-text {
+   max-width: 450px;
+   width: 100%;
+}
+
+main #greeting-text h1 {
+   font-size: 4rem;
+}
+
+main #greeting-text p {
+   font-size: 1.6rem;
+   line-height: 2.0rem;
+   padding-left: 0.6rem;
+}
+
+main #greeting-img img {
+   max-height: 450px;
+}
