@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
 
 :root {
    --color-lg-green: #edfbf0;
-   --color-md-green: #59B577;
+   --color-md-green: rgba(34,195,166,1);
    --color-dk-green: #264D33;
    --color-white: #ffffff;
-   --color-dark: #363949;
+   --color-dark: #333333;
    --color-light: rgba(132, 139, 200, 0.18);
    --color-primary-variant: #111e88;
    --color-dark-variant: #677483;
-   --bg-gradient-green: linear-gradient(to bottom right, #59B577, #D0ECD5);
+   --bg-gradient-green: linear-gradient(-25deg, #22c3a6 11%, #5fd388 100%);
 
    --card-border-radius: 2rem;
    --border-radius-1: 0.4rem;
@@ -22,7 +23,7 @@
    --padding-3: 2.0rem;
 
 
-   --box-shadow: 0 2rem 3rem var(--color-light);
+   --box-shadow: 0.8rem 0.4rem 0.8rem var(--color-light);
 }
 
 * {
@@ -41,11 +42,12 @@ html {
 }
 
 body {
-   width: 100vw;
    height: 100vh;
    font-size: 0.88rem;
    user-select: none;
    overflow-x: hidden;
+   background: var(--color-dark);
+   font-family: 'Space Mono', monospace,  sans-serif ;
 }
 
 a {
@@ -53,55 +55,55 @@ a {
 }
 
 
-header section{
+header{
    width: 100%;
-   margin: 2rem 0;
+   padding-top: 2rem;
 }
 
-header #logo{
+header #logo {
    display: flex;
-   justify-content: center;
-   align-items: center;
+   align-items:flex-end;
+   width: 19rem;
+   /* font-family: 'Fira Code' ,monospace,  sans-serif ; */
+   /* letter-spacing: -0.120rem; */
 }
 
 header #logo-img {
-   width: 8rem;
+   width: 4rem;
 }
 
 header #logo-img img {
    width: 100%;
 }
 
-header #logo-title {
-   display: flex;
-   flex-direction: column;
-}
-
-header #logo-title span{
-   color: var(--color-dk-green);
-   line-height: 2.6rem;
-}
-
-header #logo-title .first-name{
-   font-size: 2.2rem;
-
-}
-
-header #logo-title .second-name{
-   font-size: 3rem;
-   background: var(--color-dk-green);
+header #logo span{
    color: var(--color-lg-green);
+   font-size: 2.4rem;
+}
+
+header #logo .first-name{
+   font-weight: 700;
+   color: var(--color-md-green);
+   letter-spacing: -0.1rem;
+}
+
+header #logo .second-name{
+   font-weight: 600;
+   color: var(--color-lg-green);
+   letter-spacing: -0.1rem;
 }
 
 header #menu{
    display: flex;
-   justify-content: center;
-   padding: 2.8rem;
+   justify-content: space-evenly;
+   text-align: center;
+   font-family: 'Space Mono';
+   padding-top: 2rem;
 }
 
 header #menu a{
-   font-size: 1.8rem;
-   color: var(--color-md-green);
+   font-size: 1.6rem;
+   color: var(--color-lg-green);
 }
 
 header #menu a:hover{
@@ -111,38 +113,50 @@ header #menu a:hover{
 /* MAIN SECTION GREETINGS*/
 
 main{
-   background: var(--color-white);
-   padding: 0 2%;
+
 }
 
 main #greeting-card {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin: 0 auto;
-   height: 450px;
-   width: 58%;
+   margin: 2rem 0;
+   padding: 8rem;
+   background: var(--bg-gradient-green);
+   border-radius: 0.1rem;
+   box-shadow: var(--box-shadow);
 }
 
 main #greeting-text {
-   width: 32rem;
+   min-width: 16rem;
 }
 
 main #greeting-text h1 {
-   font-size: 4rem;
+   font-size: 2rem;
+   font-weight: 700;
    color: var(--color-dk-green);
 }
 
 main #greeting-text p {
    font-size: 1.6rem;
+   color: var(--color-lg-green);
    line-height: 2.0rem;
-   padding-left: 0.6rem;
+}
+
+main .greetings-icons {
+   font-size: 36px;
+   color: var(--color-dk-green);
+   padding: 0.1rem;
+   padding-top: 4rem;
+}
+
+main .greetings-icons:hover {
+   color: var(--color-lg-green);
 }
 
 main #greeting-img img {
-   max-height: 200px;
-   border-radius: 50%;
-   border: 10px solid var(--color-white);
+   max-height: 260px;
+
 }
 
 
@@ -152,7 +166,37 @@ main #portifolio {
    margin: 0 3rem;
 }
 
+
+/* MAIN SECTION ABOUT ME */
+
+footer #about-me{
+   display: flex;
+   justify-content: center;
+}
+main #about-me-card{
+
+}
+
+main #about-me-text {
+
+}
+
+main #about-me-text h2{
+   color: var(--color-md-green);
+   font-weight: 800;
+}
+main #about-me-text p{
+   color: var(--color-lg-green);
+   font-size: 1.2rem;
+   max-width: 508px;
+}
+
 /* FOOTER */
+
+footer {
+   background: var(--color-md-green);
+}
+
 footer .footer-icons {
    color: var(--color-lg-green);
    font-size: 36px;
@@ -163,7 +207,6 @@ footer .footer-icons {
 #footer-card {
    width: 100%;
    padding: 2rem;
-   background: var(--color-md-green);
 }
 
 .footer-icons {
@@ -171,22 +214,25 @@ footer .footer-icons {
    font-size: 36px;
 }
 
-#footer-card p {
+#footer-rights p {
    color: var(--color-lg-green);
-   padding-top: 4%;
+   text-align: center;
    margin-bottom: 0;
+   border-top: 1px solid var(--color-lg-green);
 }
 
+
+
 ::-webkit-scrollbar {
-   width: 1.2rem;
+   width: 0.6rem;
  }
 
 ::-webkit-scrollbar-thumb {
-background:var(--color-lg-green);
+background:var(--color-light);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: var(--color-md-green); 
+background: var(--bg-gradient-green); 
 }
 /* 
 header #menu {

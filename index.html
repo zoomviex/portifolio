@@ -4,52 +4,55 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link
-		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-		rel="stylesheet"
-		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-		crossorigin="anonymous" />
-	<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>Vinícius Vaz</title>
 </head>
 <body>
 	<header>
-		<section>
-			<div id="logo">
+		<nav class="container">      
+         <div id="logo">
             <div id="logo-img">
-               <img src="./img/logo-hexa-white.png" alt="" />
-				</div>
-            <div id="logo-title">
-               <span class="first-name">Vinicius</span>
-               <span class="second-name">V A Z</span>
+               <img src="./img/logo-vv.png" alt="">
             </div>
-			</div>
-<!-- 			
-         <div id="menu">
-            <div class="menu-item"><a href="">home</a></div>
-            <div class="menu-item"><a href="">sobre</a></div>
-            <div class="menu-item"><a href="">portifólio</a></div>
-            <div class="menu-item"><a href="">resumo</a></div>
-            <div class="menu-item"><a href="">contact</a></div>
-         </div> -->
-		</section>
+            
+            <div id="logo-title">
+               <span class="first-name">Vinícius</span><span class="second-name">Vaz</span>
+            </div>
+         </div>
+			
+         <div id="menu" class="container">
+            <a href="">home</a>
+            <a href="">sobre</a>
+            <a href="">portifólio</a>
+            <a href="">resumo</a>
+            <a href="">contact</a>
+         </div>
+		</nav>
 	</header>
 
-	<main >
-		<section id="greeting">
+	<main>
+		<section id="greeting" class="container">
 			<div id="greeting-card">
 				<div id="greeting-text">
 					<h1>Hello, World!</h1>
-					<p>Meu nome é Vinícius Vaz e sou um desenvolvedor Front-End !</p>
-				</div>
+					<p>I'm a Front-End Developer!</p>
+               <div id="greetings-social">
+                        <div>
+                           <a href=""><i class="greetings-icons fa-brands fa-whatsapp"></i></a>
+                           <a href=""><i class="greetings-icons fa-solid fa-envelope"></i></a>
+                           <a href=""><i class="greetings-icons fa-brands fa-github"></i></a>      
+                           <a href=""><i class="greetings-icons fa-brands fa-linkedin"></i></a>
+                           <a href=""><i class="greetings-icons fa-brands fa-twitter"></i></a>
+                        </div>
+               </div>
+            </div>
 
 				<div id="greeting-img">
-					<img src="./img/prot-pic.jpg" alt="" />
+                  <img src="./img/59B577__1_-removebg-preview.png" alt="" />
 				</div>
-			</div>
+         </div>
 		</section>
 
       <section id="portifolio">
@@ -59,20 +62,18 @@
       <section id="about-me" class="container">
 			<div id="about-me-card">
 				<div id="about-me-text">
-					<h2>Programador em Cozimento</h2>
-					<p>Cozinheiro formado pela Estácio de Sá/Alain Ducasse no ano de 2017. Trabalhando por 5 anos na área em diversos restaurantes pela cidade do Rio de Janeiro e outro em São Paulo. Agora, embarco em uma nova jornada:
-                  <span class="color-dk-green fw-bolder">
-                    tornar-me programador!</p>
+					<h2>Um Programador em Cozimento</h2>
+					<p>Cozinheiro formado pela Estácio de Sá/Alain Ducasse no ano de 2017. Trabalhando por 5 anos na área em diversos restaurantes pela cidade do Rio de Janeiro e outro em São Paulo. Agora, embarco em uma nova jornada: tornei-me programador!</p>
 				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		<div id="footer-card" class="d-flex flex-column justify-content-center align-items-center">
+		<div id="footer-card" class="text-center">
 			<div id="footer-social-media" class="d-flex flex-column align-items-center justify-content-center">
 				<div>
-					<h2>Entre em contato através de:</h2>
+					<h2>Entre em contato:</h2>
 				</div>
 				<div>
 					<a href=""><i class="footer-icons fa-solid fa-envelope"></i></a>
@@ -82,8 +83,10 @@
 					<a href=""><i class="footer-icons fa-brands fa-twitter"></i></a>
 				</div>
 			</div>
-         <p>Criado por Vinícius Vaz</p>
 		</div>
+      <div id="footer-rights">
+         <p>Criado por Vinícius Vaz</p>
+      </div>
 	</footer>
 </body>
 </html>
