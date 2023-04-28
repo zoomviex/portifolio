@@ -3,7 +3,7 @@
 
 :root {
    --color-lg-green: #edfbf0;
-   --color-md-green: rgba(34,195,166,1);
+   --color-md-green: rgba(34, 195, 166, 1);
    --color-dk-green: #264D33;
    --color-white: #ffffff;
    --color-dark: #333333;
@@ -47,7 +47,7 @@ body {
    user-select: none;
    overflow-x: hidden;
    background: var(--color-dark);
-   font-family: 'Space Mono', monospace,  sans-serif ;
+   font-family: 'Space Mono', monospace, sans-serif;
 }
 
 a {
@@ -55,16 +55,16 @@ a {
 }
 
 
-header{
+
+header {
    width: 100%;
-   padding-top: 2rem;
 }
 
 header #logo {
    display: flex;
-   align-items:flex-end;
-   width: 19rem;
-   margin: 1% 5%;
+   align-items: flex-end;
+   width: 22rem;
+   margin: 3% 0;
    /* font-family: 'Fira Code' ,monospace,  sans-serif ; */
    /* letter-spacing: -0.120rem; */
 }
@@ -77,31 +77,33 @@ header #logo-img img {
    width: 100%;
 }
 
-header #logo span{
+header #logo span {
    color: var(--color-lg-green);
    font-size: 2.4rem;
 }
 
-header #logo .first-name{
+header #logo .first-name {
    font-weight: 700;
    color: var(--color-md-green);
    letter-spacing: -0.1rem;
 }
 
-header #logo .second-name{
+header #logo .second-name {
    font-weight: 600;
    color: var(--color-lg-green);
    letter-spacing: -0.1rem;
 }
 
-header #menu{
+header #menu {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    text-align: center;
    font-family: 'Space Mono';
+   max-width: 750px;
+   padding: 2rem 0 4rem 0;
 }
 
-header #menu a{
+/* header #menu a{
    font-size: 1.6rem;
    color: var(--color-lg-green);
 }
@@ -109,26 +111,28 @@ header #menu a{
 header #menu a:hover{
    color: var(--color-md-green);
    text-decoration: overline;
-}
+} */
+
+
 /* MAIN SECTION GREETINGS*/
 
-main{
-
-}
+main {}
 
 main #greeting-card {
    display: flex;
-   align-items: center;
    justify-content: space-around;
-   padding: 4rem;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   max-width: 750px;
+   padding: 1rem;
    background: var(--bg-gradient-green);
    border-radius: 0.1rem;
    box-shadow: var(--box-shadow);
 }
 
+
 main #greeting-text {
    min-width: 16rem;
-   height: 240px;
 }
 
 main #greeting-text h1 {
@@ -143,20 +147,27 @@ main #greeting-text p {
    line-height: 2.0rem;
 }
 
+main #greetings-social {
+   display: flex;
+   justify-content: space-evenly;
+}
+
 main .greetings-icons {
-   font-size: 36px;
-   color: var(--color-dk-green);
-   padding: 0.1rem;
-   padding-top: 4rem;
+   font-size: 2.6rem;
+   color: var(--color-lg-green);
+}
+
+main .fa-envelope {
+   font-size: 2.4rem;
 }
 
 main .greetings-icons:hover {
-   color: var(--color-lg-green);
+   text-decoration: overline;
 }
 
 main #greeting-img img {
    max-height: 240px;
-
+   margin-bottom: 1.6rem;
 }
 
 
@@ -169,36 +180,35 @@ main #portifolio {
 
 /* MAIN SECTION ABOUT ME */
 
-main #about-me-card{
+main #info-card {
    display: flex;
    justify-content: space-around;
    align-items: flex-start;
-   
+
 }
 
-main #about-me-text {
-   max-width: 700px;
+main #info-text {
+   max-width: 750px;
 }
 
-main #about-me-text h2{
-   color: var(--color-md-green);
-   font-weight: 00;
+main #info-text h2 {
+   color: var(--color-dk-green);
+   background: var(--color-md-green);
 }
 
-main #about-me-text p{
+main #info-text p {
    color: var(--color-lg-green);
    font-size: 1.2rem;
 }
 
 
-
 /* FOOTER */
 
 footer {
-   background: var(--color-md-green);
+   /* background: var(--color-md-green); */
 }
 
-footer .footer-icons {
+/* footer .footer-icons {
    color: var(--color-lg-green);
    font-size: 36px;
    margin: 10px;
@@ -213,6 +223,10 @@ footer #footer-card {
 footer #footer-card h2{
    color: var(--color-dk-green);
    font-weight: 600;
+} */
+
+footer #footer-rights {
+   margin: 0;
 }
 
 footer #footer-rights p {
@@ -220,30 +234,18 @@ footer #footer-rights p {
    text-align: center;
    text-decoration: overline;
    font-weight: 600;
-   margin-bottom: 0;
 }
 
 ::-webkit-scrollbar {
    width: 0.6rem;
- }
+}
 
 ::-webkit-scrollbar-thumb {
-background:var(--color-light);
+   background: var(--color-light);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: var(--bg-gradient-green); 
-}
-/* 
-header #menu {
-   display: flex;
-   justify-content: space-evenly;
-   width: 100%;
-   margin-top: 2rem;
-   font-size: 1.2rem;
+   background: var(--bg-gradient-green);
 }
 
-header #menu a{
-   font-size: 1.4rem;
-   color: var(--color-md-green);
-} */
+/* QUERIES */
