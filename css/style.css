@@ -10,7 +10,7 @@
    --color-light: rgba(132, 139, 200, 0.18);
    --color-primary-variant: #111e88;
    --color-dark-variant: #677483;
-   --bg-gradient-green: linear-gradient(-25deg, #22c3a6 11%, #5fd388 100%);
+   --bg-gradient-green: linear-gradient(90deg, #22c3a6 11%, #5fd388 100%);
 
    --card-border-radius: 2rem;
    --border-radius-1: 0.4rem;
@@ -64,6 +64,7 @@ header #logo {
    display: flex;
    align-items:flex-end;
    width: 19rem;
+   margin: 1% 5%;
    /* font-family: 'Fira Code' ,monospace,  sans-serif ; */
    /* letter-spacing: -0.120rem; */
 }
@@ -95,10 +96,9 @@ header #logo .second-name{
 
 header #menu{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    text-align: center;
    font-family: 'Space Mono';
-   padding-top: 2rem;
 }
 
 header #menu a{
@@ -120,8 +120,7 @@ main #greeting-card {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin: 2rem 0;
-   padding: 8rem;
+   padding: 4rem;
    background: var(--bg-gradient-green);
    border-radius: 0.1rem;
    box-shadow: var(--box-shadow);
@@ -129,6 +128,7 @@ main #greeting-card {
 
 main #greeting-text {
    min-width: 16rem;
+   height: 240px;
 }
 
 main #greeting-text h1 {
@@ -155,7 +155,7 @@ main .greetings-icons:hover {
 }
 
 main #greeting-img img {
-   max-height: 260px;
+   max-height: 240px;
 
 }
 
@@ -169,27 +169,28 @@ main #portifolio {
 
 /* MAIN SECTION ABOUT ME */
 
-footer #about-me{
-   display: flex;
-   justify-content: center;
-}
 main #about-me-card{
-
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   
 }
 
 main #about-me-text {
-
+   max-width: 700px;
 }
 
 main #about-me-text h2{
    color: var(--color-md-green);
-   font-weight: 800;
+   font-weight: 00;
 }
+
 main #about-me-text p{
    color: var(--color-lg-green);
    font-size: 1.2rem;
-   max-width: 508px;
 }
+
+
 
 /* FOOTER */
 
@@ -204,24 +205,23 @@ footer .footer-icons {
    padding: 4px;
 }
 
-#footer-card {
+footer #footer-card {
    width: 100%;
    padding: 2rem;
 }
 
-.footer-icons {
-   color: var(--color-lg-green);
-   font-size: 36px;
+footer #footer-card h2{
+   color: var(--color-dk-green);
+   font-weight: 600;
 }
 
-#footer-rights p {
+footer #footer-rights p {
    color: var(--color-lg-green);
    text-align: center;
+   text-decoration: overline;
+   font-weight: 600;
    margin-bottom: 0;
-   border-top: 1px solid var(--color-lg-green);
 }
-
-
 
 ::-webkit-scrollbar {
    width: 0.6rem;
