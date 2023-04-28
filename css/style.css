@@ -62,9 +62,7 @@ header #logo {
    display: flex;
    align-items: center;
    width: 22rem;
-   margin: 3% 0;
-   /* font-family: 'Fira Code' ,monospace,  sans-serif ; */
-   /* letter-spacing: -0.120rem; */
+   margin: 2rem 1rem;
 }
 
 header #logo-img {
@@ -77,17 +75,17 @@ header #logo-img img {
 
 header #logo span {
    color: var(--color-lg-green);
-   font-size: 2.1rem;
+   font-size: 2rem;
 }
 
 header #logo .first-name {
-   font-weight: 700;
+   font-weight: 600;
    color: var(--color-md-green);
    letter-spacing: -0.1rem;
 }
 
 header #logo .second-name {
-   font-weight: 600;
+   font-weight: 300;
    color: var(--color-lg-green);
    letter-spacing: -0.1rem;
 }
@@ -114,60 +112,68 @@ header #menu a:hover{
 
 /* MAIN SECTION GREETINGS*/
 
-main {}
-
 main #greeting-card {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   flex-wrap: wrap-reverse;
    max-width: 750px;
-   padding: 1rem;
+   padding: 4rem;
+   border-radius: 10%;
    background: var(--bg-gradient-green);
    border-radius: 0.1rem;
    box-shadow: var(--box-shadow);
 }
 
-
-main #greeting-text {
-   min-width: 16rem;
-   position: relative;
+main #greeting-center {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   justify-content: center;
+   align-items: center;
 }
 
-main #greeting-text h1 {
+main #greeting-center h1 {
    font-size: 2rem;
    font-weight: 700;
    letter-spacing: -0.1rem;
    color: var(--color-dk-green);
 }
 
-main #greeting-text p {
+main #greeting-center p {
    font-size: 1.6rem;
    color: var(--color-lg-green);
-  
+
+}
+
+
+main #greeting-card img {
+   max-height: 200px;
+   margin-bottom: 1.6rem;
 }
 
 main #greetings-social {
    display: flex;
    justify-content: space-evenly;
+   align-items: center;
 }
 
 main .greetings-icons {
-   font-size: 2.6rem;
+   font-size: 2rem;
+   padding: 0.2rem;
    color: var(--color-lg-green);
+   border-radius: 20%;
+
 }
 
 main .fa-envelope {
-   font-size: 2.4rem;
+   font-size: 1.8rem;
 }
 
-main .greetings-icons:hover {
-   text-decoration: overline;
+main .icon-animation {
+   transition: all .3s ease-in-out;
 }
 
-main #greeting-img img {
-   max-height: 240px;
-   margin-bottom: 1.6rem;
+main .icon-animation:hover {
+   transform: scale(1.2);
+   color: var(--color-md-green);
+   background: var(--color-lg-green);
+   box-shadow: 0.2rem 0.2rem 1rem var(--color-dk-green);
 }
 
 
@@ -204,26 +210,6 @@ main #info-text p {
 
 /* FOOTER */
 
-footer {
-   /* background: var(--color-md-green); */
-}
-
-/* footer .footer-icons {
-   color: var(--color-lg-green);
-   font-size: 36px;
-   margin: 10px;
-   padding: 4px;
-}
-
-footer #footer-card {
-   width: 100%;
-   padding: 2rem;
-}
-
-footer #footer-card h2{
-   color: var(--color-dk-green);
-   font-weight: 600;
-} */
 
 footer #footer-rights {
    margin: 0;
