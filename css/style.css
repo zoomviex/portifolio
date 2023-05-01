@@ -137,7 +137,7 @@ main #greeting-center h1 {
 
 main #greeting-center p {
    font-size: 1.6rem;
-   min-width: 400px;
+   min-width: 480px;
    color: var(--color-lg-green);
 
 }
