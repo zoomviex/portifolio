@@ -43,7 +43,7 @@ html {
 
 body {
    height: 100vh;
-   font-size: 0.88rem;
+   font-size: 1rem;
    user-select: none;
    overflow-x: hidden;
    background: var(--color-dark);
@@ -99,49 +99,38 @@ header #menu {
    padding: 2rem 0 4rem 0;
 }
 
-/* header #menu a{
-   font-size: 1.6rem;
-   color: var(--color-lg-green);
-}
-
-header #menu a:hover{
-   color: var(--color-md-green);
-   text-decoration: overline;
-} */
-
-
 /* MAIN SECTION GREETINGS*/
 
 main #greeting-card {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap-reverse;
    max-width: 750px;
-   padding: 4rem;
+   padding: 4rem 0;
    border-radius: 10%;
    background: var(--bg-gradient-green);
    border-radius: 0.1rem;
    box-shadow: var(--box-shadow);
 }
 
-main #greeting-center {
-   display: flex;
-   flex-wrap: wrap-reverse;
-   justify-content: center;
-   align-items: center;
+main #greeting-card p {
+   font-size: 1.2rem;
+   color: var(--color-lg-green);
 }
 
-main #greeting-center h1 {
-   font-size: 2rem;
-   font-weight: 700;
+
+main #greeting-card p span{
+   font-size: 1.4rem;
+   font-weight: 600;
    letter-spacing: -0.1rem;
    color: var(--color-dk-green);
 }
 
-main #greeting-center p {
-   font-size: 1.6rem;
-   min-width: fit-content;
-   color: var(--color-lg-green);
-
+main #greeting-card p span::after{
+   content: "\a";
+   white-space: pre;
 }
-
 
 main #greeting-card img {
    max-height: 200px;
@@ -185,36 +174,7 @@ main #portifolio {
 }
 
 
-/* MAIN SECTION ABOUT ME */
-
-main #info-card {
-   display: flex;
-   justify-content: space-around;
-   align-items: flex-start;
-
-}
-
-main #info-text {
-   max-width: 750px;
-}
-
-main #info-text h2 {
-   color: var(--color-dk-green);
-   background: var(--color-md-green);
-}
-
-main #info-text p {
-   color: var(--color-lg-green);
-   font-size: 1.2rem;
-}
-
-
 /* FOOTER */
-
-
-footer #footer-rights {
-   margin: 0;
-}
 
 footer #footer-rights p {
    color: var(--color-lg-green);
@@ -236,3 +196,4 @@ footer #footer-rights p {
 }
 
 /* QUERIES */
+
