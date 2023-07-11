@@ -194,7 +194,7 @@ footer #footer-rights p {
 }
 
 ::-webkit-scrollbar {
-   width: 0.6rem;
+   width: 0.1rem;
 }
 
 ::-webkit-scrollbar-thumb {
