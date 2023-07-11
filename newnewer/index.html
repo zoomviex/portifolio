@@ -15,26 +15,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
    <link rel="shortcut icon" href="../img/vv-logo.svg" type="image/x-icon">
-   
+
    <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
    <title>Vinícius Vaz</title>
-   <link rel="stylesheet" href="../new/style.css">
+   <link rel="stylesheet" href="./index.css">
 </head>
 
 <body class="container">
    <header>
-      <nav class="navbar justify-content-between align-items-center">
-         <div class="logo">
-            <img src="../img/vv-logo.svg" alt="">
-         </div>
+      <div class="logo">
+         <img src="../img/vv-logo.svg" alt="">
+      </div>
 
-         <div class="menu d-flex">
+      <nav id="nav">
+         <button id="btn-mobile" onclick="toggleMenu()">Menu
+            <i class="fa-solid fa-bars" style="color: #22c3a6;"></i>
+         </button>
+
+         <div class="menu">
             <li><a href="#">About</a></li>
             <li><a href="#">Tech</a></li>
             <li><a href="#">Portifolio</a></li>
-            <li><a class="resume" href="#">Contact</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="resume" href="#">Resume</a></li>
          </div>
       </nav>
    </header>
@@ -42,7 +47,7 @@
    <main>
       <section id="about" class="">
          <div id="about-me">
-            <!-- <h5>Hello, World</h5> -->
+            <h5>Hello, World</h5>
             <h1><span>VINICIUS</span>VAZ</h1>
             <h2>Front-End Developer</FRONT-END></h2>
             <p>I care about quality, functionality, and a better user experience
@@ -114,6 +119,8 @@
    <footer class="text-center">
       Desenvolvido por Vinícius Vaz
    </footer>
+
+   <script src="./index.js"></script>
 </body>
 
 </html>
